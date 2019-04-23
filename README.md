@@ -139,10 +139,10 @@ If you installed hddfancontrol from a distribution package, you likely already h
 ```
 sudo cp ./systemd/hddfancontrol.service /etc/systemd/system/
 sudo mkdir -p /etc/conf.d
-sudo cp ./systemd/hddfancontrol.conf /etc/conf.d/hddfancontrol
+sudo cp ./systemd/hddfancontrol.conf /etc/hddfancontrol
 ```
 
-Then you need to edit the `HDDFANCONTROL_ARGS` variable in `/etc/conf.d/hddfancontrol` to set the parameters (drives, temperature range...).
+Then you need to edit the `HDDFANCONTROL_ARGS` variable in `/etc/hddfancontrol` to set the parameters (drives, temperature range...).
 
 You can then start the daemon with `sudo systemctl start hddfancontrol`, see its status with `sudo systemctl status hddfancontrol` and enable automatic startup at boot time with `sudo systemctl enable hddfancontrol`.
 
